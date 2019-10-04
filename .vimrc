@@ -1,6 +1,12 @@
 set number
 syntax on
 set wrap
-set tabstop=4
-set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ [BUFFER=%n]\ %{strftime('%c')}
-set encoding=utf-8
+
+set ttyfast
+set laststatus=2
+
+" Disable arrow keys
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
